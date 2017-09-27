@@ -27,4 +27,4 @@ stripe.customers.create({
 .then(charge => res.render("charge.pug"));
 });
 
-app.listen(4567);
+app.listen(process.env.PORT, process.envIP);
